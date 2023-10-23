@@ -234,7 +234,7 @@
   (prompt-move (remove-peg board (letter->pos (get-input "e"))))) ;; this could use the thread-last macro
 
 (defn prompt-rows
-  []
+  [opts]
   (println "How many rows? [5]")
   (let [rows (Integer. (get-input 5))
         board (new-board rows)]
